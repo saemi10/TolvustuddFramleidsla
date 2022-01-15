@@ -23,13 +23,13 @@
 						<nav id="nav">
 							<ul>
 								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<a href="#menu" class="menuToggle"><span>Valmynd</span></a>
 									<div id="menu">
 										<ul>
 											<li><a href="index.html">Heim</a></li>
 											<li><a href="V1.html">Verkefni 1: Vefsíða</a></li>
 											<li><a href="V2.html">Verkefni 2: Óþekkt</a></li>
-											<li><a href="elements.html">Elements</a></li>
+											<!--<li><a href="elements.html">Elements</a></li>-->
 										</ul>
 									</div>
 								</li>
@@ -55,11 +55,62 @@
 
 								<hr />
 
-								<h4>Feugiat aliquam</h4>
-								<p>Nam sapien ante, varius in pulvinar vitae, rhoncus id massa. Donec varius ex in mauris ornare, eget euismod urna egestas. Etiam lacinia tempor ipsum, sodales porttitor justo. Aliquam dolor quam, semper in tortor eu, volutpat efficitur quam. Fusce nec fermentum nisl. Aenean erat diam, tempus aliquet erat.</p>
+								<h4>Uppsetning á Github</h4>
+								<p>Ég setti upp nýtt "Repository" á <a href="https://github.com/saemi10/TolvustuddFramleidsla">Github síðunni minni</a> undir nafninu TolvustuddFramleidsla. Ég reyndi að nota eftirfarandi skipanir í Git Bash:</p>
 
-								<p>Etiam iaculis nulla ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit, eget condimentum nunc blandit vel. In at pulvinar lectus. Morbi diam ante, vulputate et imperdiet eget, fermentum non dolor. Ut eleifend sagittis tincidunt. Sed viverra commodo mi, ac rhoncus justo. Duis neque ligula, elementum ut enim vel, posuere finibus justo. Vivamus facilisis maximus nibh quis pulvinar. Quisque hendrerit in ipsum id tellus facilisis fermentum. Proin mauris dui, at vestibulum sit amet, auctor bibendum neque.</p>
+								<pre><code>echo "TolvustuddFramleidsla" >> README.md
+git init
+git add README.md 
+git commit -m "first commit"
+git branch -N main
+git remote add origin https://github.com/saemi10/TolvustuddFramleidsla.git
+git push -u origin main
+</code></pre>
 
+								<p>Það gekk þó ekki, og alltaf fékk ég villukóðann:</p>
+								<pre><code>error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/saemi10/TolvustuddFramleidsla.git'</code></pre>
+								<p>Eftir ágætis leit á <a href="https://stackoverflow.com/questions/4181861/message-src-refspec-master-does-not-match-any-when-pushing-commits-in-git">Stack Overflow</a> fann ég lausn frá <a href="https://stackoverflow.com/users/330457/jin-kwon">Jin Kwon</a>. Hún er eftirfarandi tvær skipanir:</p>
+								<pre><code>git commit -m 'fixes' --allow-empty
+git push</code></pre>
+								<p>Þá fór ég í stillingarnar á GitHub Repository-inu og breytti "source" úr "none" í "main" og vistaði. Þar með var vefsíðan mín komin í loftið.</p>
+
+								<hr />
+
+								<h5>Aðlögun vefsíðu að mínum þörfum</h5>
+								<p>Ég hófst handa við að breyta vefsíðunni. Ég opnaði index.html skrána og breytti titlinum og gerði tilraun til að setja inn favicon merki. Ég geri ráð fyrir að koma aftur að favicon uppsetningunni síðar.</p>
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-12"><span class="image fit"><img src="images/Titillogfavicon.jpg" alt="" /></span></div>
+									</div>
+								</div>
+								<p>Næst endurnefndi ég "generic.html" skrána sem "V1.html", afritaði hana og nefndi afritið "V2.html". Svo íslenskaði ég síðuhausinn og "hamborgaravalmyndina" í index undirsíðunni. Það afritaði ég svo á allar undirsíður vefsíðunnar:</p>
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-12"><span class="image fit"><img src="images/Headerbreytingar_islenska.jpg" alt="" /></span></div>
+									</div>
+								</div>
+								<p>Ég endurskrfaði Banner texta forsíðunnar og tengdi takkann sem þar var við undirsíðu verkefnis 1. Ég stefni svo á að uppfæra þann takka svo hann vísi alltaf á nýjasta verkefni þess tíma.</p>
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-12"><span class="image fit"><img src="images/Bannerbreytingar_forsida_islenska.jpg" alt="" /></span></div>
+									</div>
+								</div>
+								<p>Þegar skrollað er niður síðuna koma þrír hlutar (<i>e. section</i>). Ég hyggst nota fyrsta hlutann sem stutta kynningu á mér en læt það bíða í bili. Annan hlutann ætla ég að nota sem smá kynningar á viðfangsefni hvers verkefnis. Ég skipti því um mynd og breytti textanum í fyrsta undirhlutanum.</p>
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-12"><span class="image fit"><img src="images/Kynningar_hluti1.jpg" alt="" /></span></div>
+									</div>
+								</div>
+								<p>Ég veit ekki alveg hvað ég ætla mér að gera við þriðja hlutann og hvort ég ætla að nýta mér CTA hlutann svo ég læt þá hluta síðunnar liggja eins og þeir eru í bili sem komment svo hlutarnir birtist ekki á síðunni.</p>
+								<p>Til að klára forsíðunna breytti ég <i>Footer</i> síðunnar, setti inn viðeigandi hlekki og fann tákn fyrir þá. Táknin tók ég af <a href="https://fontawesome.com/">Font Awesome</a>. Þetta færði ég svo yfir á allar aðrar undirsíður vefsíðunnar. Þá fannst mér forsíðan orðin ágæt þrátt fyrir að skilja eftir smá <i>Lorem ipsum</i> á nokkrum stöðum.</p>
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-12"><span class="image fit"><img src="images/Footerbreytingar_hlekkirogfl.jpg" alt="" /></span></div>
+									</div>
+								</div>
+								<p>Til að ganga fallega frá hlutunum áður en ég setti nýja útgáfu inn á GitHub tók ég elements valmöguleikann út úr hamborgaravalmyndinni á öllum undirsíðum vefsínnar með því að breyta viðeigandi skipun í athugasemd. Þannig get ég auðveldlega sett elements síðuna aftur inn til að nota við frekari breytingar á síðunni seinna meir.</p>
+								<p>Loks uppfærði ég síðuna inn á GitHub repository-ið með Git Bash eins og áður hefur verið lýst.</p>
 							</div>
 						</section>
 					</article>
@@ -67,14 +118,13 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://www.linkedin.com/in/saemundurgudmundsson" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://hi.is" class="fas fa-university" style="border-bottom: none;"><span class="label"></span></a></li>
+							<li><a href="https://github.com/saemi10/TolvustuddFramleidsla" class="fab fa-github" style="border-bottom: none;"><span class="label"></span></a></li>
+							<li><a href="mailto:sag72@hi.is" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 						<ul class="copyright">
-							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; Sæmundur Guðmundsson</li><li>Hönnun: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
 					</footer>
 

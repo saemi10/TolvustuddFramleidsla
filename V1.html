@@ -28,7 +28,8 @@
 										<ul>
 											<li><a href="index.html">Heim</a></li>
 											<li><a href="V1.html">Verkefni 1: Vefsíða</a></li>
-											<li><a href="V2.html">Verkefni 2: Óþekkt</a></li>
+											<li><a href="V2.html">Verkefni 2: Væntanlegt</a></li>
+											<li><a href="Ferilskra.html">Ferilskrá</a></li>
 											<!--<li><a href="elements.html">Elements</a></li>-->
 										</ul>
 									</div>
@@ -55,7 +56,7 @@
 
 								<hr />
 
-								<h4>Uppsetning á Github</h4>
+								<h3>Uppsetning á Github</h3>
 								<p>Ég setti upp nýtt "Repository" á <a href="https://github.com/saemi10/TolvustuddFramleidsla">Github síðunni minni</a> undir nafninu TolvustuddFramleidsla. Ég reyndi að nota eftirfarandi skipanir í Git Bash:</p>
 
 								<pre><code>echo "TolvustuddFramleidsla" >> README.md
@@ -77,14 +78,14 @@ git push</code></pre>
 
 								<hr />
 
-								<h5>Aðlögun vefsíðu að mínum þörfum</h5>
-								<p>Ég hófst handa við að breyta vefsíðunni. Ég opnaði index.html skrána og breytti titlinum og gerði tilraun til að setja inn favicon merki. Ég geri ráð fyrir að koma aftur að favicon uppsetningunni síðar.</p>
+								<h3>Aðlögun vefsíðu að mínum þörfum</h3>
+								<p>Ég hófst handa við að breyta vefsíðunni. Ég opnaði <code>index.html</code> skrána og breytti titlinum og gerði tilraun til að setja inn favicon merki. Ég geri ráð fyrir að koma aftur að favicon uppsetningunni síðar.</p>
 								<div class="box alt">
 									<div class="row gtr-50 gtr-uniform">
 										<div class="col-12"><span class="image fit"><img src="images/Titillogfavicon.jpg" alt="" /></span></div>
 									</div>
 								</div>
-								<p>Næst endurnefndi ég "generic.html" skrána sem "V1.html", afritaði hana og nefndi afritið "V2.html". Svo íslenskaði ég síðuhausinn og "hamborgaravalmyndina" í index undirsíðunni. Það afritaði ég svo á allar undirsíður vefsíðunnar:</p>
+								<p>Næst endurnefndi ég <code>generic.html</code> skrána sem <code>V1.html</code>, afritaði hana og nefndi afritið <code>V2.html</code>. Svo íslenskaði ég síðuhausinn og "hamborgaravalmyndina" í index undirsíðunni. Það afritaði ég svo á allar undirsíður vefsíðunnar:</p>
 								<div class="box alt">
 									<div class="row gtr-50 gtr-uniform">
 										<div class="col-12"><span class="image fit"><img src="images/Headerbreytingar_islenska.jpg" alt="" /></span></div>
@@ -111,6 +112,55 @@ git push</code></pre>
 								</div>
 								<p>Til að ganga fallega frá hlutunum áður en ég setti nýja útgáfu inn á GitHub tók ég elements valmöguleikann út úr hamborgaravalmyndinni á öllum undirsíðum vefsínnar með því að breyta viðeigandi skipun í athugasemd. Þannig get ég auðveldlega sett elements síðuna aftur inn til að nota við frekari breytingar á síðunni seinna meir.</p>
 								<p>Loks uppfærði ég síðuna inn á GitHub repository-ið með Git Bash eins og áður hefur verið lýst.</p>
+
+								<hr />
+
+								<h3>Breyttar áherslur vefsíðunnar</h3>
+								<p>Skráning mín í námskeiðið fór loks í gegn og þar gat ég séð allar upplýsingar um verkefni. Ég komst þá að því að tilgangur síðunnar er ekki alveg sá sem ég hélt að hann væri, hreinlega bara vinnudagbók, heldur meira síða til að sýna hvað ég hef gert tengt mínu námi. Því þarf ég að bæta ferilskrá við síðuna og breyta nokkrum útfærsluatriðum á borð við virkni takka lítillega.</p>
+
+								<hr />
+
+								<h3>Ferilskrá</h3>
+								<p>Ég tók afrit af <code>V1.html</code> skránni og vistaði undir heitinu <code>Ferilskra.html</code>. Ég bætti svo flipa við valmyndina fyrir síðuna á öllum undirsíðum vefsíðunnar, eins og áður hefur verið sýnt. Því næst breytti ég titlum og textanum efst á síðunni til að gera hann við hæfi fyrir ferilskrá.</p>
+								<p>Þá hóf ég að skrifa fyrsta hluta ferilskráarinnar: kynningu á mér. Ég vildi hafa mynd af mér hægra megin við textann. Ég fór þá í undirsíðuna "elements.html" og fann þar uppsetningu á slíkum texta:</p>
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-12"><span class="image fit"><img src="images/mynd_til_hlidar_ferilskra.jpg" alt="" /></span></div>
+									</div>
+								</div>
+								<p>Til þess að fá myndina inn þarf maður að setja hana inn í <code>span</code> skipun og nota klasann "image left". Næst setti ég inn upplýsingar um menntun. Þá nýtti ég mer <code>span</code> skipunina sem ég var nýbúinn að kynnast. Með smá leit á netinu fann ég lausn á <a href="https://stackoverflow.com/questions/12438339/how-may-i-align-text-to-the-left-and-text-to-the-right-in-the-same-line">Stack Overflow</a> frá notandanum <a href="https://stackoverflow.com/users/1193335/giona">Giona</a> sem byggir á því að bæta <code>style="float: right;"</code> inn í <code>span</code> skipunina.</p>
+								<p>Eftir það fyllti ég inn ferilskrána mína á hefðbundinn hátt. Ég lenti hins vegar í vandræðum þegar mig vantaði aukið bil (<i>e. tab</i>) inn í textann minn. Ég fann <a href="https://www.bitdegree.org/learn/html-tab#:~:text=Tab%3A%20Useful%20Tips-,Adding%20Tab%20Space%20in%20HTML,to%20the%20whitespace%20collapse%20principle.">góða útskýringu</a> á því að tab skipun er ekki til í HTML og lausn við því vandamáli er að setja inn fjögur ósamþjappanleg bil (<i>e. non-breakable space</i>).</p>
+								<hr />
+
+								<h3>Endurbætur og breytt skipulag</h3>
+								<p>Þegar ferilskráin var komin inn fannst mér við hæfi að láta takkann á forsíðunni vísa frekar á ferilskrá heldur en nýjasta verkefnið. Svo skrifaði ég inn smá texta í hluta 1 á forsíðunni og breytti um tákn með Font Awesome eins og áður hefur verið lýst. Svo commentaði ég þann part af hluta 2 á forsíðunni sem ekki er kominn í notkun og geymi hann þar til ég hef eitthvað að birta. Ég skildi þó eftir smá teaser fyrir verkefni 2.</p>
+								<p>Svo ákvað ég að gera síðuna þægilegri til notkunar án músar. Því bætti ég við huldum "skip-navigation" takka efst. Leiðbeiningar um uppsetningu hans fann ég á <a href="https://youtu.be/jDDaOFr9nqQ">YouTube</a> en þær samanstanda af eftirfarandi kóða neðst í <code>main.css</code> skránni:</p>
+								<pre><code>/* Smooth scrolling */
+html {
+	scroll-behavior: smooth;
+}
+								
+/* Skip to main content */
+.skip-nav-link {
+	background: #ed4933;
+	padding: 0.5rem 1.5rem;
+	border-radius: 0 0 0.25rem 0.25rem;
+	position: absolute;
+	left: 0.5rem;
+	transform: translateY(-120%);
+	transition: transform 325ms ease-in;
+}
+								
+.skip-nav-link:focus {
+	transform: translateY(0);
+}</code></pre>
+								<p>og eftirfarandi kóða í <code>index.html</code> skránni á milli "header"-sins og "nav"-sins:</p>
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-12"><span class="image fit"><img src="images/Skiptonav_linkur.jpg" alt="" /></span></div>
+									</div>
+								</div>
+								<p>Að lokum skipti ég um heiti á síðunni <code>V2.html</code> í valmyndinni og fór svo í gegnum allar undirsíðurnar og tók <code>elements.html</code> valmöguleikann út úr valmyndinni. Breytingunum push-aði ég svo á GitHub eins og áður hefur verið lýst.</p>
 							</div>
 						</section>
 					</article>

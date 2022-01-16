@@ -3997,3 +3997,23 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+	/* Smooth scrolling */
+	html {
+		scroll-behavior: smooth;
+	}
+
+	/* Skip to main content */
+	.skip-nav-link {
+		background: #ed4933		;
+		padding: 0.5rem 1.5rem;
+		border-radius: 0 0 0.25rem 0.25rem;
+		position: absolute;
+		left: 0.5rem;
+		transform: translateY(-120%);
+		transition: transform 325ms ease-in	;
+	}
+
+	.skip-nav-link:focus {
+		transform: translateY(0);
+	}

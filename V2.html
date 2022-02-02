@@ -48,10 +48,83 @@
 						<section class="wrapper style5">
 							<div class="inner">
 
-								<h3>Intro</h3>
-								<p>Project 2 was made up of two parts. Cutting with a vinyl cutter</p>
+								<h2>Intro</h2>
+								<p>Project 2 was made up of two parts. <br /> <b>Part 1:</b><br /> Cutting with a programmable vinyl cutter. Available materials were 1000x500 mm sheet of vinyl.<br /> <b>Part 2:</b><br /> Designing parametric pressfit model from more then one building blocks and cutting it out with a laser cutter. Available materials were 4x500x500 mm birch plywood or 3x500x500 mm acrylic plastic (plexiglass). Excess cardboard paper from the FabLab and materials we brought ourselves were also allowed.</p>
 
-							
+								<hr />
+
+								<h2>Part 1 - Vinyl</h2>
+								<h3>Thought process and preperation</h3>
+								<p>I started by creating a table in an Excel spreadsheet to ceep track of my worktime and to categorize it. Then I browsed YouTube for ideas for the vinyl cutter. Or that was the purpose at least. I used the search words "vinyl cutter" and found <a href="https://youtu.be/5Yo3plor5uE">this video</a> about how to operate a vinyl cutter. I found the video informing but not very inspirational. That was okay though because I had an idea. I could use the vinyl cutter to make logo stickers for my newfounded company Zerobars ehf (website will be linked when it's ready).</p>
+								<p>Next step was to download Inkscape and to get to know it a bit. I tried some buttons, read some descriptions, drew some shapes and even tried to import .jpg files. When that was done I decided that the preperation was over and I sould move to designing the stickers.</p>
+								<p>Total worktime: 2 hours.</p>
+								<hr />
+
+								<h2>Part 2 - Pressfit</h2>
+								<h3>Thought process and preperation</h3>
+								<p>Lorem ipsum</p>
+							</div>
+							<div id="kerf" class="inner">
+								<h3>Measuring Kerf</h3>
+								<p>When using a laser cutter, you have to account for the kerf of the laser, that is the thickness of the cut itself. To measure the kerf, I teamed up with Friðrik Valur and <a href="https://finnurme.github.io/Heimasi-a/">Finnur Mauritz</a>.</p>
+								<p>We started by creating a simple drawing of a few rectangles in Fusion 360. Each rectangle was 10x10 mm and the number of rectangles was 9. The reason for that choice was that with 9 rectangles, you have 10 paralell cuts of equal size. That meant that we could make the cut in the laser cutter, push all the rectangles to one side, measure the gap and devide by 10.</p>
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-12"><span class="image fit"><img src="images/Measure_kerf_fusion_drawing.jpg" alt="" /></span></div>
+									</div>
+								</div>
+								<p>Next step was to export the Fusion file to .dxf format and open it with Inkscape. In Inkscape we found out that we made a mistake in the Fusion drawing. When we drew in Fusion, we drew one rectangle and used linear pattern to make the rest of them, that is we duplicated the first one 9 times automaticly. We should have only duplicated 3 sides of the original rectangle but we selected all of them. As a result we had two lines where there sould only have been one for all the vertical ones except for the ends. But by selecting the duplicated lines in Inkscape and deleting them one by one, we fixed the problem.</p>
+								<p>Then we selected all the lines in the drawing and adjusted 3 parameters. We set the fill to none, the stroke paint to flat color and the stroke style thickness to 0,020mm. We exported the file once again but this time as a .svg file and we saved it to a USB flash drive.</p>
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-12"><span class="image fit"><img src="images/Measure_kerf_inkscape_drawing.jpg" alt="" /></span></div>
+									</div>
+								</div>
+								<p>The laser cutter in the FabLab in VR-III was connected to a PC that had the nessecary software already on it to run the laser cutter based on our .svg file. We plugged the USB stick into the PC and opened the file with Inkscape. We doublethecked if all parameters were the same as before and pressed CTRL+P, then ENTER on the keyboard. That took us to the program controlling the laser cutter.</p>
+								<p>On that stage of our project, we were not shore whether we whanted to use acrylic plastic or plywood so we decided to measure the kerf in both materials. We adjusted the program for plywood and placed a sheet of 4mm thick plywood on in the laser cutter. We positioned the drawing on the plate in the software using a camera feed from the cutter.</p>
+								<p><em><b>INSERT IMAGE HERE</b></em></p>
+								<p>The settings in the laser cutter control program were:</p>
+								<div class="table-wrapper">
+									<table class="alt">
+										<thead>
+											<tr>
+												<th>Material</th>
+												<th>Parameter</th>
+												<th>Value</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Plywood</td>
+												<td>Line thickness</td>
+												<td>4 mm</td>
+											</tr>
+											<tr>
+												<td>Plywood</td>
+												<td>Something else</td>
+												<td>Some value</td>
+											</tr>
+											<tr>
+												<td>Acrylic plastic</td>
+												<td> Line thickness</td>
+												<td>3 mm</td>
+											</tr>
+											<tr>
+												<td>Acrylic plastic</td>
+												<td>Someting else</td>
+												<td>Some value</td>
+											</tr>
+											<tr>
+												<td>Both?</td>
+												<td>Something</td>
+												<td>Value</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p><em><b>INSERT IMAGE HERE</b></em></p>
+								<p>The last step was to measure the gap with a calliper and divide by 10. Our results were that for the plywood, the kerf of the laser cutter is 0.167 mm and for the acrylic plastic, it is 0,133 mm.</p>
+							</section>
 								<!--<p>Vestibulum ultrices risus velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam. Proin nec dui cursus, posuere dui eget interdum. Fusce lectus magna, sagittis at facilisis vitae, pellentesque at etiam. Quisque posuere leo quis sem commodo, vel scelerisque nisi scelerisque. Suspendisse id quam vel tortor tincidunt suscipit. Nullam auctor orci eu dolor consectetur, interdum ullamcorper ante tincidunt. Mauris felis nec felis elementum varius.</p>
 
 								<hr />

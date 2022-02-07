@@ -202,7 +202,38 @@
 								<p>After some discussion with Hafliði, the tutor of the project and teacher of the course, I descided to try to make the slope using gradient input to the laser cutter. That means that the power of the laser will be determined by the darkness of the lines and using a gradient would theoretically create a slope. By taking a look at the parameters, it can be seen that the slope is supposed to be 54°. But before cutting the base in full size, some tests on that were required.</p>
 								<p>Total worktime: 3.7 hours.</p>
 								<h3>Creating slope/gradient tests</h3>
-								<p>To create a slope test...</p>
+								<p>To create a slope test, I started by drawing the part I wanted to use as a test pice. I made a 3x20x50 mm and cut the longer ends at an angle of 54° just as nessecary to make a pentagon.</p>
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-12"><span class="image fit"><img src="images/Laser_test_slope_Fusion.jpg" alt="" /></span></div>
+									</div>
+								</div>
+								<p>That was not the most efficient way to do the test, it would have been easier to not bother with the corners in Fusion and just make them in Inkscape, but I wanted to test the whole process.
+									In Fusion, I adjusted for the kerf of 0.133 mm and exported as a .dxf file. I opened the file in Inkscape. I immediately saw problems. The top line of the rectangle was split in two parts 
+									and on top of that, the corners were rounded so getting the lines to fit was not an easy drag and drop:
+								</p>
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-12"><span class="image fit"><img src="images/Laser_test_slope_corner.jpg" alt="" /></span></div>
+									</div>
+								</div>
+								<p>But after some in app measurements and easy calculation, I ended with 4 lines and 4 corners, just like I wanted. Then I created rectangles in which the gradient fill was supposed to go. 
+									I only found one way to get an accurate gradient, and that was to use the snaping-mechanism of the corners of the rectangle to get a horizontal line. Then I realized, I should have duplicated
+									the rectangle to the other side before adding the gradient. After fixing that I had a successful test unit, or I thought so. 
+								</p>
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-12"><span class="image fit"><img src="images/Laser_test_slope_sheet_with_gradient.jpg" alt="" /></span></div>
+									</div>
+								</div>
+								<p>I made a copy of the test unit and changed the opacity down to 50%. Then I duplicated the items to get a set for testing. After that I realized that I should have made it in black, not red. 
+									I slammed the undo button, fixed the color and did it all over again. The end result looked like this:
+								</p>
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-12"><span class="image fit"><img src="images/Laser_test_slope_all.jpg" alt="" /></span></div>
+									</div>
+								</div>
 							</section>
 								<!--<p>Vestibulum ultrices risus velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam. Proin nec dui cursus, posuere dui eget interdum. Fusce lectus magna, sagittis at facilisis vitae, pellentesque at etiam. Quisque posuere leo quis sem commodo, vel scelerisque nisi scelerisque. Suspendisse id quam vel tortor tincidunt suscipit. Nullam auctor orci eu dolor consectetur, interdum ullamcorper ante tincidunt. Mauris felis nec felis elementum varius.</p>
 

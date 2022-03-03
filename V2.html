@@ -49,7 +49,7 @@
 							<div class="inner">
 
 								<h2>Intro</h2>
-								<p>Project 2 was made up of two parts. <br /> <b>Part 1:</b><br /> Cutting with a programmable vinyl cutter. Available materials were 1000x500 mm sheet of vinyl.<br /> <b>Part 2:</b><br /> Designing parametric pressfit model from more then one building blocks and cutting it out with a laser cutter. Available materials were 4x500x500 mm birch plywood or 3x500x500 mm acrylic plastic (plexiglass). Excess cardboard paper from the FabLab and materials we brought ourselves were also allowed.</p>
+								<p>Project 2 was made up of two parts: <br /> <b>Part 1:</b><br /> Cutting with a programmable vinyl cutter. Available materials were 1000x500 mm sheet of vinyl.<br /> <b>Part 2:</b><br /> Designing parametric pressfit model from more then one building blocks and cutting it out with a laser cutter. Available materials were 4x500x500 mm birch plywood or 3x500x500 mm acrylic plastic (plexiglass). Excess cardboard paper from the FabLab and materials we brought ourselves were also allowed.</p>
 
 								<hr />
 
@@ -59,7 +59,7 @@
 								<p>Next step was to download Inkscape and to get to know it a bit. I tried some buttons, read some descriptions, drew some shapes and even tried to import .jpg files. When that was done I decided that the preperation was over and I sould move to designing the stickers.</p>
 								<p>Total worktime: 2 hours.</p>
 								<h3>Creating cutting path</h3>
-								<p>I descided to use this project to create stickers of the logo of my startup company: Zerobars. I started by opening Inkscape and importing a .jpg file of the logo. Then I opened "Document properties" and changed the page size to 1000 x 500 mm. I copy-pasted the logo many times over, resized some of them and draged around until I had reached an adequate usage of the page. The next step was to trace the bitmap of every single image. I played with the "Brightness threshold" and tried values from 0,250 to 0,990. I think the 0,990 value will be better in the end, but we will see when I run it through the cutter. I also experimented with inverting the image. I don't know wheter that will work or not, but it is worth the try.</p>
+								<p>I descided to use this project to create stickers of the logo of my startup company: Zerobars. I started by opening Inkscape and importing a .jpg file of the logo. Then I opened "Document properties" and changed the page size to 1000 x 500 mm. I copy-pasted the logo many times over, resized some of them and draged around until I had reached an adequate usage of the page. The next step was to trace the bitmap of every single image. I played with the "Brightness threshold" and tried values from 0,250 to 0,990. I think the 0,990 value will be better in the end, but we will see when I run it through the cutter. I also experimented with inverting the image. I don't know whether that will work or not, but it is worth the try.</p>
 								<div class="box alt">
 									<div class="row gtr-50 gtr-uniform">
 										<div class="col-6"><span class="image fit"><img src="images/Vinyl_trace_bitmap_all.jpg" alt="" /></span></div>
@@ -68,6 +68,30 @@
 									</div>
 								</div>
 								<p>Total worktime: 1.5 hours.</p>
+								<h3>Fixing the cutting path</h3>
+								<p>When I arrived at the FavLab, Hafliði (the instructor) took a look at my dvg file. He showed me that my file did not only include the bitmap of every logo, 
+									but also the jpg files behind the bitmaps.
+									It turnes out that when bitmapping, the original image behind isn't deleted so I had to delete all the leftover images. 
+									Instead of carefully selecting every image individually and deleting them, I deleted most of the copies of each size, both the image and the bitmap.
+									Then Hafliði showed me a way to make a lot of copies very fast. There is namely a special function in Inkscape to make a lot of copies of an object.
+									That function is called "Clone". There was one issue left. The smaller logos were probably to small to cut do to the shape of the cutters blade.
+									The blade in the cutter is shaped like a regular blade from a knife. Therefore it has a limited turning radius, which at the time seemed like a 
+									possible problem. For those reasons, I deleted most of the clones for the smaller logos and only kept a few as a test, but I kept all the bigger ones.
+								</p>
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-12"><span class="image fit"><img src="images/Inkscape_clone.jpg" alt="" /></span></div>
+										
+									</div>
+								</div>
+								<p>Total worktime: 1.25 hours.</p>
+								<h3>Cutting from the vinyl</h3>
+								<p>When the svg file was finally ready for cutting, it was time to set the vinyl cutter up. 
+									I installed a sheet of matt black vinyl and made sure the sheet was under the guiding wheels. 
+									Then I copied the file to a USB stick and opened the file in the PC connected to the vinyl cutter. 
+									I selected all the entities and pressed <code>CTRL+P</code> on the keyboard (to print the file to the vinyl cutter). 
+									The cutting took a few minutes and was a great succsess. There were
+								</p>
 								<hr />
 
 								<h2>Part 2 - Pressfit</h2>
@@ -99,7 +123,7 @@
 									</div>
 								</div>
 								<p>The laser cutter in the FabLab in VR-III was connected to a PC that had the nessecary software already on it to run the laser cutter based on our .svg file. We plugged the USB stick into the PC and opened the file with Inkscape. We doublethecked if all parameters were the same as before and pressed CTRL+P, then ENTER on the keyboard. That took us to the program controlling the laser cutter.</p>
-								<p>On that stage of our project, we were not shore whether we whanted to use acrylic plastic or plywood so we decided to measure the kerf in both materials. We adjusted the program for plywood and placed a sheet of 4mm thick plywood on in the laser cutter. We positioned the drawing on the plate in the software using a camera feed from the cutter.</p>
+								<p>On that stage of our project, we were not sure whether we whanted to use acrylic plastic or plywood so we decided to measure the kerf in both materials. We adjusted the program for plywood and placed a sheet of 4mm thick plywood on in the laser cutter. We positioned the drawing on the plate in the software using a camera feed from the cutter.</p>
 								<p>The settings in the laser cutter control program were:</p>
 								<div class="table-wrapper">
 									<table class="alt">

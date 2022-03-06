@@ -5,304 +5,538 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Verkefni 2</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+<head>
+	<title>Verkefni 2</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
 
-				<!-- Header -->
-					<header id="header">
-						<h1><a href="index.html">Sæmundur</a></h1>
-						<nav id="nav">
+<body class="is-preload">
+
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1><a href="index.html">Sæmundur</a></h1>
+			<nav id="nav">
+				<ul>
+					<li class="special">
+						<a href="#menu" class="menuToggle"><span>Valmynd</span></a>
+						<div id="menu">
 							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Valmynd</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Heim</a></li>
-											<li><a href="V1.html">Verkefni 1: Vefsíða</a></li>
-											<li><a href="V2.html">Verkefni 2:<br /> Tölvustuddur skurður</a></li>
-											<li><a href="V3.html">Verkefni 3:<br /> 3D prentun og skönnun</a></li>
-											<li><a href="Ferilskra.html">Ferilskrá</a></li>
-											<!--<li><a href="elements.html">Elements</a></li>-->
-										</ul>
-									</div>
-								</li>
+								<li><a href="index.html">Heim</a></li>
+								<li><a href="V1.html">Verkefni 1: Vefsíða</a></li>
+								<li><a href="V2.html">Verkefni 2:<br /> Tölvustuddur skurður</a></li>
+								<li><a href="V3.html">Verkefni 3:<br /> 3D prentun og skönnun</a></li>
+								<li><a href="Ferilskra.html">Ferilskrá</a></li>
+								<!--<li><a href="elements.html">Elements</a></li>-->
 							</ul>
-						</nav>
-					</header>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</header>
 
-				<!-- Main -->
-					<article id="main">
-						<header>
-							<h2>Computer aided cutting</h2>
-							<p>Project 2 in Computer aided fabrication - Work in Progress</p>
-						</header>
-						<section class="wrapper style5">
-							<div class="inner">
+		<!-- Main -->
+		<article id="main">
+			<header>
+				<h2>Computer aided cutting</h2>
+				<p>Project 2 in Computer aided fabrication - Work in Progress</p>
+			</header>
+			<section class="wrapper style5">
+				<div class="inner">
 
-								<h2>Intro</h2>
-								<p>Project 2 was made up of two parts: <br /> <b>Part 1:</b><br /> Cutting with a programmable vinyl cutter. Available materials were 1000x500 mm sheet of vinyl.<br /> <b>Part 2:</b><br /> Designing parametric pressfit model from more then one building blocks and cutting it out with a laser cutter. Available materials were 4x500x500 mm birch plywood or 3x500x500 mm acrylic plastic (plexiglass). Excess cardboard paper from the FabLab and materials we brought ourselves were also allowed.</p>
+					<h2>Intro</h2>
+					<p>Project 2 was made up of two parts: <br /> <b>Part 1:</b><br /> Cutting with a programmable vinyl
+						cutter. Available materials were 1000x500 mm sheet of vinyl.<br /> <b>Part 2:</b><br />
+						Designing parametric pressfit model from more then one building blocks and cutting it out with a
+						laser cutter. Available materials were 4x500x500 mm birch plywood or 3x500x500 mm acrylic
+						plastic (plexiglass). Excess cardboard paper from the FabLab and materials we brought ourselves
+						were also allowed.</p>
 
-								<hr />
+					<hr />
 
-								<h2>Part 1 - Vinyl</h2>
-								<h3>Thought process and preperation</h3>
-								<p>I started by creating a table in an Excel spreadsheet to ceep track of my worktime and to categorize it. Then I browsed YouTube for ideas for the vinyl cutter. Or that was the purpose at least. I used the search words "vinyl cutter" and found <a href="https://youtu.be/5Yo3plor5uE">this video</a> about how to operate a vinyl cutter. I found the video informing but not very inspirational. That was okay though because I had an idea. I could use the vinyl cutter to make logo stickers for my newfounded company Zerobars ehf (website will be linked when it's ready).</p>
-								<p>Next step was to download Inkscape and to get to know it a bit. I tried some buttons, read some descriptions, drew some shapes and even tried to import .jpg files. When that was done I decided that the preperation was over and I sould move to designing the stickers.</p>
-								<p>Total worktime: 2 hours.</p>
-								<h3>Creating cutting path</h3>
-								<p>I descided to use this project to create stickers of the logo of my startup company: Zerobars. I started by opening Inkscape and importing a .jpg file of the logo. Then I opened "Document properties" and changed the page size to 1000 x 500 mm. I copy-pasted the logo many times over, resized some of them and draged around until I had reached an adequate usage of the page. The next step was to trace the bitmap of every single image. I played with the "Brightness threshold" and tried values from 0,250 to 0,990. I think the 0,990 value will be better in the end, but we will see when I run it through the cutter. I also experimented with inverting the image. I don't know whether that will work or not, but it is worth the try.</p>
-								<div class="box alt">
-									<div class="row gtr-50 gtr-uniform">
-										<div class="col-6"><span class="image fit"><img src="images/Vinyl_trace_bitmap_all.jpg" alt="" /></span></div>
-										<div class="col-6"><span class="image fit"><img src="images/Vinyl_trace_bitmap_inverted_settings.jpg" alt="" /></span></div>
-										
-									</div>
-								</div>
-								<p>Total worktime: 1.5 hours.</p>
-								<h3>Fixing the cutting path</h3>
-								<p>When I arrived at the FavLab, Hafliði (the instructor) took a look at my dvg file. He showed me that my file did not only include the bitmap of every logo, 
-									but also the jpg files behind the bitmaps.
-									It turnes out that when bitmapping, the original image behind isn't deleted so I had to delete all the leftover images. 
-									Instead of carefully selecting every image individually and deleting them, I deleted most of the copies of each size, both the image and the bitmap.
-									Then Hafliði showed me a way to make a lot of copies very fast. There is namely a special function in Inkscape to make a lot of copies of an object.
-									That function is called "Clone". There was one issue left. The smaller logos were probably to small to cut do to the shape of the cutters blade.
-									The blade in the cutter is shaped like a regular blade from a knife. Therefore it has a limited turning radius, which at the time seemed like a 
-									possible problem. For those reasons, I deleted most of the clones for the smaller logos and only kept a few as a test, but I kept all the bigger ones.
-								</p>
-								<div class="box alt">
-									<div class="row gtr-50 gtr-uniform">
-										<div class="col-12"><span class="image fit"><img src="images/Inkscape_clone.jpg" alt="" /></span></div>
-										
-									</div>
-								</div>
-								<p>Total worktime: 1.25 hours.</p>
-								<h3>Cutting from the vinyl</h3>
-								<p>When the svg file was finally ready for cutting, it was time to set the vinyl cutter up. 
-									I installed a sheet of matt black vinyl and made sure the sheet was under the guiding wheels. 
-									Then I copied the file to a USB stick and opened the file in the PC connected to the vinyl cutter. 
-									I selected all the entities and pressed <code>CTRL+P</code> on the keyboard (to print the file to the vinyl cutter). 
-									The cutting took a few minutes and was a great succsess. There were
-								</p>
-								<hr />
+					<h2>Part 1 - Vinyl</h2>
+					<h3>Thought process and preperation</h3>
+					<p>I started by creating a table in an Excel spreadsheet to ceep track of my worktime and to
+						categorize it. Then I browsed YouTube for ideas for the vinyl cutter. Or that was the purpose at
+						least. I used the search words "vinyl cutter" and found <a
+							href="https://youtu.be/5Yo3plor5uE">this video</a> about how to operate a vinyl cutter. I
+						found the video informing but not very inspirational. That was okay though because I had an
+						idea. I could use the vinyl cutter to make logo stickers for my newfounded company Zerobars ehf
+						(website will be linked when it's ready).</p>
+					<p>Next step was to download Inkscape and to get to know it a bit. I tried some buttons, read some
+						descriptions, drew some shapes and even tried to import .jpg files. When that was done I decided
+						that the preperation was over and I sould move to designing the stickers.</p>
+					<p>Worktime: 2 hours.</p>
+					<h3>Creating cutting path</h3>
+					<p>I descided to use this project to create stickers of the logo of my startup company: Zerobars. I
+						started by opening Inkscape and importing a .jpg file of the logo. Then I opened "Document
+						properties" and changed the page size to 1000 x 500 mm. I copy-pasted the logo many times over,
+						resized some of them and draged around until I had reached an adequate usage of the page. The
+						next step was to trace the bitmap of every single image. I played with the "Brightness
+						threshold" and tried values from 0,250 to 0,990. I think the 0,990 value will be better in the
+						end, but we will see when I run it through the cutter. I also experimented with inverting the
+						image. I don't know whether that will work or not, but it is worth the try.</p>
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-6"><span class="image fit"><img src="images/Vinyl_trace_bitmap_all.jpg"
+										alt="" /></span></div>
+							<div class="col-6"><span class="image fit"><img
+										src="images/Vinyl_trace_bitmap_inverted_settings.jpg" alt="" /></span></div>
 
-								<h2>Part 2 - Pressfit</h2>
-								<h3>Thought process and preperation</h3>
-								<p>I started by browsing Pinterest for ideas for wooden pressfit projects. I used the search words "press fit plywood project". I found some amazing work and that was really inspirational. The links are below.<br /><a href="https://www.pinterest.com/pin/216172850838374677/">Pinterest 1</a><br /><a href="https://www.pinterest.com/pin/358458451565001587/">Pinterest 2</a><br /><a href="https://www.pinterest.com/pin/420945896394845671/">Pinterest 3</a><br /><a href="https://www.pinterest.com/pin/420945896394845694/">Pinterest 4</a><br /><a href="https://www.pinterest.com/pin/420945896394845663/">Pinterest 5</a> </p>
-								<p>I am used to using Autodesk Inventor and I am currently in a course about drawing in DS Solidworks but for the sake of spending more time on the project it self, rather than getting stuck on problems due to the difference between Fusion 360 and those programs, I decided to install Fusion 360 on my laptop. Getting the license was really easy because I already had an Autodesk student account. But the downloading and installation still took a long time and I really wanted to make sure that I did not make any mistakes in the installation proccess.</p>
-								<p>When Fusion 360 was finished installing I opened tutorials fram <a href="https://www.youtube.com/channel/UCGVeAIo0roKGs_tf3t4VCiA">Jón Þór</a> regarding parametric design and getting a 3D object on to a laser cuttable 2D format. I followed through the tutorials and made sure to repeat every step myself and that made me understand those actions a lot better.</p>
-								<p>Total worktime: 5 hours.</p>
-							</div>
-							<div id="kerf" class="inner">
-								<h3>Measuring Kerf</h3>
-								<p>When using a laser cutter, you have to account for the kerf of the laser, that is the thickness of the cut itself. To measure the kerf, I teamed up with <a href="https://frikki2801.github.io/TolvustuddFramleidsla/">Friðrik Valur</a> and <a href="https://finnurme.github.io/Heimasi-a/">Finnur Mauritz</a>.</p>
-								<p>We started by creating a simple drawing of a few rectangles in Fusion 360. Each rectangle was 10x10 mm and the number of rectangles was 9. The reason for that choice was that with 9 rectangles, you have 10 paralell cuts of equal size. That meant that we could make the cut in the laser cutter, push all the rectangles to one side, measure the gap and devide by 10.</p>
-								<div class="box alt">
-									<div class="row gtr-50 gtr-uniform">
-										<div class="col-12"><span class="image fit"><img src="images/Measure_kerf_fusion_drawing.jpg" alt="" /></span></div>
-									</div>
-								</div>
-								<div class="box alt">
-									<div class="row gtr-50 gtr-uniform">
-										<div class="col-12"><span class="image fit"><img src="images/Measure_kerf_fusion_parameters.jpg" alt="" /></span></div>
-									</div>
-								</div>
-								<p>Next step was to export the Fusion file to .dxf format and open it with Inkscape. In Inkscape we found out that we made a mistake in the Fusion drawing. When we drew in Fusion, we drew one rectangle and used linear pattern to make the rest of them, that is we duplicated the first one 9 times automaticly. We should have only duplicated 3 sides of the original rectangle but we selected all of them. As a result we had two lines where there sould only have been one for all the vertical ones except for the ends. But by selecting the duplicated lines in Inkscape and deleting them one by one, we fixed the problem.</p>
-								<p>Then we selected all the lines in the drawing and adjusted 3 parameters. We set the fill to none, the stroke paint to flat color and the stroke style thickness to 0,020mm. We exported the file once again but this time as a .svg file and we saved it to a USB flash drive.</p>
-								<div class="box alt">
-									<div class="row gtr-50 gtr-uniform">
-										<div class="col-12"><span class="image fit"><img src="images/Measure_kerf_inkscape_drawing.jpg" alt="" /></span></div>
-									</div>
-								</div>
-								<p>The laser cutter in the FabLab in VR-III was connected to a PC that had the nessecary software already on it to run the laser cutter based on our .svg file. We plugged the USB stick into the PC and opened the file with Inkscape. We doublethecked if all parameters were the same as before and pressed CTRL+P, then ENTER on the keyboard. That took us to the program controlling the laser cutter.</p>
-								<p>On that stage of our project, we were not sure whether we whanted to use acrylic plastic or plywood so we decided to measure the kerf in both materials. We adjusted the program for plywood and placed a sheet of 4mm thick plywood on in the laser cutter. We positioned the drawing on the plate in the software using a camera feed from the cutter.</p>
-								<p>The settings in the laser cutter control program were:</p>
-								<div class="table-wrapper">
-									<table class="alt">
-										<thead>
-											<tr>
-												<th>Material</th>
-												<th>Parameter</th>
-												<th>Value</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Plywood</td>
-												<td>Preset</td>
-												<td>Wood cutting 6 mm</td>
-											</tr>
-											<tr>
-												<td>Plywood</td>
-												<td>Speed</td>
-												<td>20%</td>
-											</tr>
-											<tr>
-												<td>Plywood</td>
-												<td>Thickness</td>
-												<td>4 mm</td>
-											</tr>
-											<tr>
-												<td>Acrylic plastic</td>
-												<td>Preset</td>
-												<td>Acryl 3 mm</td>
-											</tr>
-											<tr>
-												<td>Acrylic plastic</td>
-												<td>Speed</td>
-												<td>30%</td>
-											</tr>
-											<tr>
-												<td>Acrylic plastic</td>
-												<td> Thickness</td>
-												<td>3 mm</td>
-											</tr>
-											<tr>
-												<td>Both</td>
-												<td>Autofocus</td>
-												<td>Thickness</td>
-											</tr>
-											<tr>
-												<td>Both</td>
-												<td>Air outlet</td>
-												<td>ON</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-								<p>The last step was to measure the gap with a calliper and divide by 10. Our results were that for the plywood, the kerf of the laser cutter is 0.167 mm and for the acrylic plastic, it is 0.133 mm.</p>
-								<div class="box alt">
-									<div class="row gtr-50 gtr-uniform">
-										<div class="col-12"><span class="image fit"><img src="images/Measuring_kerf(2).jpg" alt="" /></span></div>
-										<div class="col-4"><span class="image fit"><img src="images/Measuring_kerf(1).jpg" alt="" /></span></div>
-										<div class="col-4"><span class="image fit"><img src="images/Measuring_kerf(3).jpg" alt="" /></span></div>
-										<div class="col-4"><span class="image fit"><img src="images/Measuring_kerf(4).jpg" alt="" /></span></div>
-										<div class="col-4"><span class="image fit"><img src="images/Measuring_kerf(5).jpg" alt="" /></span></div>
-										<div class="col-4"><span class="image fit"><img src="images/Measuring_kerf(6).jpg" alt="" /></span></div>
-										<div class="col-4"><span class="image fit"><img src="images/Measuring_kerf(7).jpg" alt="" /></span></div>
-										<div class="col-4"><span class="image fit"><img src="images/Measuring_kerf(8).jpg" alt="" /></span></div>
-										<div class="col-4"><span class="image fit"><img src="images/Measuring_kerf(9).jpg" alt="" /></span></div>
-										<div class="col-4"><span class="image fit"><img src="images/Measuring_kerf(10).jpg" alt="" /></span></div>
-										<div class="col-12"><span class="image fit"><img src="images/Measuring_kerf(11).jpg" alt="" /></span></div>
-									</div>
-								</div>
-								<p>Total worktime: 3.25 hours.</p>
-								<h3>First design</h3>
-								<p>At this point in the process, I had descided what my project should be. I was going to make a part of a soup feeding robot from another project in another course. Me and <a href="https://frikki2801.github.io/TolvustuddFramleidsla/">Friðrik Valur</a> were planning on making the robot together. But this project was a solo one, not a team project so we had to split the design and manufacture part (at least the lasercutting and 3D printing) of the robot. I took the base of the robot and Friðrik took the arms of it. I think there is plenty of complicated stuff in the robot to be enough for two very good lasercutting pressfit projects and also for two good 3D printing projects.</p>
-								<p>An important part of the project was to test the pressfit mechanisms. Friðrik was making rods for the arms of the robot using 3 different pressfit techniques and planned on testing all of them. If, later in the project, my part will need some more tests, then I will also create test files to test those pressfit mechanisms, but since we are designing one robot, we are sharing parameters so the usability of two identical test would be limited. I still think I will have some valid and valuable tests later on.</p>
-								<p>The first idea of a base of the robot was to make it from black acrylic plastic looks like this:</p>
-								<div class="box alt">
-									<div class="row gtr-50 gtr-uniform">
-										<div class="col-12"><span class="image fit"><img src="images/Robot_base_first_design.jpg" alt="" /></span></div>
-									</div>
-								</div>
-								<p>That is a pentagon shaped box with cut-outs for both rotating joint and wires. What was miss there was a base for the base and connections to a soupholder, a fan and possibly some sensors. The placement of the sensors was not determined at that point in time.</p>
-								<p>I started by creating a sketch in Fusion 360. I used a pentagon shape and added the finger joints using both "Rectangular pattern" and the "Mirror" functions.</p>
-								<div class="box alt">
-									<div class="row gtr-50 gtr-uniform">
-										<div class="col-12"><span class="image fit"><img src="images/Robot_base_sketch(1).jpg" alt="" /></span></div>
-									</div>
-								</div>
-								<p>All dimensions of the drawing were made using parameters. And some of them were calculations based on trigonometry and other parameters.</p>
-								<div class="box alt">
-									<div class="row gtr-50 gtr-uniform">
-										<div class="col-12"><span class="image fit"><img src="images/Robot_base_parameters.jpg" alt="" /></span></div>
-									</div>
-								</div>
-								<p>From that sketch I extruded both the top plate and the sides, just like in the tutorial from Jón Þór mentioned above. There was one problem though. Now I had side pieces with ends at an angle and the laser cutter does not cut at an angle.</p>
-								<div class="box alt">
-									<div class="row gtr-50 gtr-uniform">
-										<div class="col-12"><span class="image fit"><img src="images/Robot_base_side.jpg" alt="" /></span></div>
-									</div>
-								</div>
-								<p>After some discussion with Hafliði, the tutor of the project and teacher of the course, I descided to try to make the slope using gradient input to the laser cutter. That means that the power of the laser will be determined by the darkness of the lines and using a gradient would theoretically create a slope. By taking a look at the parameters, it can be seen that the slope is supposed to be 54°. But before cutting the base in full size, some tests on that were required.</p>
-								<p>Total worktime: 3.7 hours.</p>
-								<h3>Creating slope/gradient tests</h3>
-								<p>To create a slope test, I started by drawing the part I wanted to use as a test pice. I made a 3x20x50 mm and cut the longer ends at an angle of 54° just as nessecary to make a pentagon.</p>
-								<div class="box alt">
-									<div class="row gtr-50 gtr-uniform">
-										<div class="col-12"><span class="image fit"><img src="images/Laser_test_slope_Fusion.jpg" alt="" /></span></div>
-									</div>
-								</div>
-								<p>That was not the most efficient way to do the test, it would have been easier to not bother with the corners in Fusion and just make them in Inkscape, but I wanted to test the whole process.
-									In Fusion, I adjusted for the kerf of 0.133 mm and exported as a .dxf file. I opened the file in Inkscape. I immediately saw problems. The top line of the rectangle was split in two parts 
-									and on top of that, the corners were rounded so getting the lines to fit was not an easy drag and drop:
-								</p>
-								<div class="box alt">
-									<div class="row gtr-50 gtr-uniform">
-										<div class="col-12"><span class="image fit"><img src="images/Laser_test_slope_corner.jpg" alt="" /></span></div>
-									</div>
-								</div>
-								<p>But after some in app measurements and easy calculation, I ended with 4 lines and 4 corners, just like I wanted. Then I created rectangles in which the gradient fill was supposed to go. 
-									I only found one way to get an accurate gradient, and that was to use the snaping-mechanism of the corners of the rectangle to get a horizontal line. Then I realized, I should have duplicated
-									the rectangle to the other side before adding the gradient. After fixing that I had a successful test unit, or I thought so. 
-								</p>
-								<div class="box alt">
-									<div class="row gtr-50 gtr-uniform">
-										<div class="col-12"><span class="image fit"><img src="images/Laser_test_slope_sheet_with_gradient.jpg" alt="" /></span></div>
-									</div>
-								</div>
-								<p>I made a copy of the test unit and changed the opacity down to 50%. Then I duplicated the items to get a set for testing. After that I realized that I should have made it in black, not red. 
-									I slammed the undo button, fixed the color and did it all over again. The end result looked like this:
-								</p>
-								<div class="box alt">
-									<div class="row gtr-50 gtr-uniform">
-										<div class="col-12"><span class="image fit"><img src="images/Laser_test_slope_all.jpg" alt="" /></span></div>
-									</div>
-								</div>
-								<p>Total worktime: 1.15 hours.</p>
-								<h3>Testing the slope</h3>
-								<p>At the FabLab in VR3, I copy-pasted the .svg file (shown in figure above) to the PC connected to the laser cutter. I opened it in Inkscape and printed it out to Epilog Dashboard (the laser
-									 cutter driver). When doing so, I realized that the driver was not splitting the file correctly between engraving and vector. To fix that, I went back to Inkscape, deleted all the edges, 
-									 selected the gradients and exported as .png with the pixel density of 1000 dpi. Then I opened a new file in Inkscape, drag-and-dropped the png image and drew rectangles around the gradients,
-									 just like before.
-								</p>
-								<p></p>
-							</section>
-								<!--<p>Vestibulum ultrices risus velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam. Proin nec dui cursus, posuere dui eget interdum. Fusce lectus magna, sagittis at facilisis vitae, pellentesque at etiam. Quisque posuere leo quis sem commodo, vel scelerisque nisi scelerisque. Suspendisse id quam vel tortor tincidunt suscipit. Nullam auctor orci eu dolor consectetur, interdum ullamcorper ante tincidunt. Mauris felis nec felis elementum varius.</p>
+						</div>
+					</div>
+					<p>Worktime: 1.5 hours.</p>
+					<h3>Fixing the cutting path</h3>
+					<p>When I arrived at the FavLab, Hafliði (the instructor) took a look at my dvg file. He showed me
+						that my file did not only include the bitmap of every logo,
+						but also the jpg files behind the bitmaps.
+						It turnes out that when bitmapping, the original image behind isn't deleted so I had to delete
+						all the leftover images.
+						Instead of carefully selecting every image individually and deleting them, I deleted most of the
+						copies of each size, both the image and the bitmap.
+						Then Hafliði showed me a way to make a lot of copies very fast. There is namely a special
+						function in Inkscape to make a lot of copies of an object.
+						That function is called "Clone". There was one issue left. The smaller logos were probably to
+						small to cut do to the shape of the cutters blade.
+						The blade in the cutter is shaped like a regular blade from a knife. Therefore it has a limited
+						turning radius, which at the time seemed like a
+						possible problem. For those reasons, I deleted most of the clones for the smaller logos and only
+						kept a few as a test, but I kept all the bigger ones.
+					</p>
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-12"><span class="image fit"><img src="images/Inkscape_clone.jpg"
+										alt="" /></span></div>
 
-								<hr />
+						</div>
+					</div>
+					<p>Worktime: 1.25 hours.</p>
+					<h3>Cutting from the vinyl</h3>
+					<p>When the svg file was finally ready for cutting, it was time to set the vinyl cutter up.
+						I installed a sheet of matt black vinyl and made sure the sheet was under the guiding wheels.
+						Then I copied the file to a USB stick and opened the file in the PC connected to the vinyl
+						cutter.
+						I selected all the entities and pressed <code>CTRL+P</code> on the keyboard (to print the file
+						to the vinyl cutter).
+						The cutting took a few minutes and was a great succsess. Next step was to cut a piece of the
+						vinyl, ply off the excess and try it out.
+						The smallest ones were a failure as expected but some of the smaller ones were an unexpected
+						succsess.
+						The plying was quite tricky, especially with the smaller logos. I tried using both an acne and a
+						tablecloth knife, but I found the knife to be a bit better.
+						To get the stickers to another surface, I dust had to cover them with a masking tape, pull the
+						tape carefully off and apply it to the final surface.
+					</p>
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-6"><span class="image fit"><img src="images/ApplyingVinyl4.jpg"
+										alt="" /></span></div>
+							<div class="col-6"><span class="image fit"><img src="images/ApplyingVinyl2.jpg"
+										alt="" /></span></div>
+							<div class="col-6"><span class="image fit"><img src="images/ApplyingVinyl3.jpg"
+										alt="" /></span></div>
+							<div class="col-6"><span class="image fit"><img src="images/ApplyingVinyl1.jpg"
+										alt="" /></span></div>
+						</div>
+					</div>
+					<p>Worktime: 1.5 hours.</p>
+					<p>Vinyl total worktime: 6.25 hours.</p>
 
-								<h4>Feugiat aliquam</h4>
-								<p>Nam sapien ante, varius in pulvinar vitae, rhoncus id massa. Donec varius ex in mauris ornare, eget euismod urna egestas. Etiam lacinia tempor ipsum, sodales porttitor justo. Aliquam dolor quam, semper in tortor eu, volutpat efficitur quam. Fusce nec fermentum nisl. Aenean erat diam, tempus aliquet erat.</p>
+					<hr />
 
-								<p>Etiam iaculis nulla ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit, eget condimentum nunc blandit vel. In at pulvinar lectus. Morbi diam ante, vulputate et imperdiet eget, fermentum non dolor. Ut eleifend sagittis tincidunt. Sed viverra commodo mi, ac rhoncus justo. Duis neque ligula, elementum ut enim vel, posuere finibus justo. Vivamus facilisis maximus nibh quis pulvinar. Quisque hendrerit in ipsum id tellus facilisis fermentum. Proin mauris dui, at vestibulum sit amet, auctor bibendum neque.</p>-->
+					<h2>Part 2 - Pressfit</h2>
+					<h3>Thought process and preperation</h3>
+					<p>I started by browsing Pinterest for ideas for wooden pressfit projects. I used the search words
+						"press fit plywood project". I found some amazing work and that was really inspirational. The
+						links are below.<br /><a href="https://www.pinterest.com/pin/216172850838374677/">Pinterest
+							1</a><br /><a href="https://www.pinterest.com/pin/358458451565001587/">Pinterest
+							2</a><br /><a href="https://www.pinterest.com/pin/420945896394845671/">Pinterest
+							3</a><br /><a href="https://www.pinterest.com/pin/420945896394845694/">Pinterest
+							4</a><br /><a href="https://www.pinterest.com/pin/420945896394845663/">Pinterest 5</a> </p>
+					<p>I am used to using Autodesk Inventor and I am currently in a course about drawing in DS
+						Solidworks but for the sake of spending more time on the project it self, rather than getting
+						stuck on problems due to the difference between Fusion 360 and those programs, I decided to
+						install Fusion 360 on my laptop. Getting the license was really easy because I already had an
+						Autodesk student account. But the downloading and installation still took a long time and I
+						really wanted to make sure that I did not make any mistakes in the installation proccess.</p>
+					<p>When Fusion 360 was finished installing I opened tutorials fram <a
+							href="https://www.youtube.com/channel/UCGVeAIo0roKGs_tf3t4VCiA">Jón Þór</a> regarding
+						parametric design and getting a 3D object on to a laser cuttable 2D format. I followed through
+						the tutorials and made sure to repeat every step myself and that made me understand those
+						actions a lot better.</p>
+					<p>Worktime: 5 hours.</p>
+				</div>
+				<div id="kerf" class="inner">
+					<h3>Measuring Kerf</h3>
+					<p>When using a laser cutter, you have to account for the kerf of the laser, that is the thickness
+						of the cut itself. To measure the kerf, I teamed up with <a
+							href="https://frikki2801.github.io/TolvustuddFramleidsla/">Friðrik Valur</a> and <a
+							href="https://finnurme.github.io/Heimasi-a/">Finnur Mauritz</a>.</p>
+					<p>We started by creating a simple drawing of a few rectangles in Fusion 360. Each rectangle was
+						10x10 mm and the number of rectangles was 9. The reason for that choice was that with 9
+						rectangles, you have 10 paralell cuts of equal size. That meant that we could make the cut in
+						the laser cutter, push all the rectangles to one side, measure the gap and devide by 10.</p>
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-12"><span class="image fit"><img
+										src="images/Measure_kerf_fusion_drawing.jpg" alt="" /></span></div>
+						</div>
+					</div>
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-12"><span class="image fit"><img
+										src="images/Measure_kerf_fusion_parameters.jpg" alt="" /></span></div>
+						</div>
+					</div>
+					<p>Next step was to export the Fusion file to .dxf format and open it with Inkscape. In Inkscape we
+						found out that we made a mistake in the Fusion drawing. When we drew in Fusion, we drew one
+						rectangle and used linear pattern to make the rest of them, that is we duplicated the first one
+						9 times automaticly. We should have only duplicated 3 sides of the original rectangle but we
+						selected all of them. As a result we had two lines where there sould only have been one for all
+						the vertical ones except for the ends. But by selecting the duplicated lines in Inkscape and
+						deleting them one by one, we fixed the problem.</p>
+					<p>Then we selected all the lines in the drawing and adjusted 3 parameters. We set the fill to none,
+						the stroke paint to flat color and the stroke style thickness to 0,020mm. We exported the file
+						once again but this time as a .svg file and we saved it to a USB flash drive.</p>
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-12"><span class="image fit"><img
+										src="images/Measure_kerf_inkscape_drawing.jpg" alt="" /></span></div>
+						</div>
+					</div>
+					<p>The laser cutter in the FabLab in VR-III was connected to a PC that had the nessecary software
+						already on it to run the laser cutter based on our .svg file. We plugged the USB stick into the
+						PC and opened the file with Inkscape. We doublethecked if all parameters were the same as before
+						and pressed CTRL+P, then ENTER on the keyboard. That took us to the program controlling the
+						laser cutter.</p>
+					<p>On that stage of our project, we were not sure whether we whanted to use acrylic plastic or
+						plywood so we decided to measure the kerf in both materials. We adjusted the program for plywood
+						and placed a sheet of 4mm thick plywood on in the laser cutter. We positioned the drawing on the
+						plate in the software using a camera feed from the cutter.</p>
+					<p>The settings in the laser cutter control program were:</p>
+					<div class="table-wrapper">
+						<table class="alt">
+							<thead>
+								<tr>
+									<th>Material</th>
+									<th>Parameter</th>
+									<th>Value</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Plywood</td>
+									<td>Preset</td>
+									<td>Wood cutting 6 mm</td>
+								</tr>
+								<tr>
+									<td>Plywood</td>
+									<td>Speed</td>
+									<td>20%</td>
+								</tr>
+								<tr>
+									<td>Plywood</td>
+									<td>Thickness</td>
+									<td>4 mm</td>
+								</tr>
+								<tr>
+									<td>Acrylic plastic</td>
+									<td>Preset</td>
+									<td>Acryl 3 mm</td>
+								</tr>
+								<tr>
+									<td>Acrylic plastic</td>
+									<td>Speed</td>
+									<td>30%</td>
+								</tr>
+								<tr>
+									<td>Acrylic plastic</td>
+									<td> Thickness</td>
+									<td>3 mm</td>
+								</tr>
+								<tr>
+									<td>Both</td>
+									<td>Autofocus</td>
+									<td>Thickness</td>
+								</tr>
+								<tr>
+									<td>Both</td>
+									<td>Air outlet</td>
+									<td>ON</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<p>The last step was to measure the gap with a calliper and divide by 10. Our results were that for
+						the plywood, the kerf of the laser cutter is 0.167 mm and for the acrylic plastic, it is 0.133
+						mm.</p>
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-12"><span class="image fit"><img src="images/Measuring_kerf(2).jpg"
+										alt="" /></span></div>
+							<div class="col-4"><span class="image fit"><img src="images/Measuring_kerf(1).jpg"
+										alt="" /></span></div>
+							<div class="col-4"><span class="image fit"><img src="images/Measuring_kerf(3).jpg"
+										alt="" /></span></div>
+							<div class="col-4"><span class="image fit"><img src="images/Measuring_kerf(4).jpg"
+										alt="" /></span></div>
+							<div class="col-4"><span class="image fit"><img src="images/Measuring_kerf(5).jpg"
+										alt="" /></span></div>
+							<div class="col-4"><span class="image fit"><img src="images/Measuring_kerf(6).jpg"
+										alt="" /></span></div>
+							<div class="col-4"><span class="image fit"><img src="images/Measuring_kerf(7).jpg"
+										alt="" /></span></div>
+							<div class="col-4"><span class="image fit"><img src="images/Measuring_kerf(8).jpg"
+										alt="" /></span></div>
+							<div class="col-4"><span class="image fit"><img src="images/Measuring_kerf(9).jpg"
+										alt="" /></span></div>
+							<div class="col-4"><span class="image fit"><img src="images/Measuring_kerf(10).jpg"
+										alt="" /></span></div>
+							<div class="col-12"><span class="image fit"><img src="images/Measuring_kerf(11).jpg"
+										alt="" /></span></div>
+						</div>
+					</div>
+					<p>Worktime: 3.25 hours.</p>
+					<h3>First design</h3>
+					<p>At this point in the process, I had descided what my project should be. I was going to make a
+						part of a soup feeding robot from another project in another course. Me and <a
+							href="https://frikki2801.github.io/TolvustuddFramleidsla/">Friðrik Valur</a> were planning
+						on making the robot together. But this project was a solo one, not a team project so we had to
+						split the design and manufacture part (at least the lasercutting and 3D printing) of the robot.
+						I took the base of the robot and Friðrik took the arms of it. I think there is plenty of
+						complicated stuff in the robot to be enough for two very good lasercutting pressfit projects and
+						also for two good 3D printing projects.</p>
+					<p>An important part of the project was to test the pressfit mechanisms. Friðrik was making rods for
+						the arms of the robot using 3 different pressfit techniques and planned on testing all of them.
+						If, later in the project, my part will need some more tests, then I will also create test files
+						to test those pressfit mechanisms, but since we are designing one robot, we are sharing
+						parameters so the usability of two identical test would be limited. I still think I will have
+						some valid and valuable tests later on.</p>
+					<p>The first idea of a base of the robot was to make it from black acrylic plastic looks like this:
+					</p>
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-12"><span class="image fit"><img src="images/Robot_base_first_design.jpg"
+										alt="" /></span></div>
+						</div>
+					</div>
+					<p>That is a pentagon shaped box with cut-outs for both rotating joint and wires. What was miss
+						there was a base for the base and connections to a soupholder, a fan and possibly some sensors.
+						The placement of the sensors was not determined at that point in time.</p>
+					<p>I started by creating a sketch in Fusion 360. I used a pentagon shape and added the finger joints
+						using both "Rectangular pattern" and the "Mirror" functions.</p>
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-12"><span class="image fit"><img src="images/Robot_base_sketch(1).jpg"
+										alt="" /></span></div>
+						</div>
+					</div>
+					<p>All dimensions of the drawing were made using parameters. And some of them were calculations
+						based on trigonometry and other parameters.</p>
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-12"><span class="image fit"><img src="images/Robot_base_parameters.jpg"
+										alt="" /></span></div>
+						</div>
+					</div>
+					<p>From that sketch I extruded both the top plate and the sides, just like in the tutorial from Jón
+						Þór mentioned above. There was one problem though. Now I had side pieces with ends at an angle
+						and the laser cutter does not cut at an angle.</p>
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-12"><span class="image fit"><img src="images/Robot_base_side.jpg"
+										alt="" /></span></div>
+						</div>
+					</div>
+					<p>After some discussion with Hafliði, the tutor of the project and teacher of the course, I
+						descided to try to make the slope using gradient input to the laser cutter. That means that the
+						power of the laser will be determined by the darkness of the lines and using a gradient would
+						theoretically create a slope. By taking a look at the parameters, it can be seen that the slope
+						is supposed to be 54°. But before cutting the base in full size, some tests on that were
+						required.</p>
+					<p>Worktime: 3.7 hours.</p>
+					<h3>Creating slope/gradient tests</h3>
+					<p>To create a slope test, I started by drawing the part I wanted to use as a test pice. I made a
+						3x20x50 mm and cut the longer ends at an angle of 54° just as nessecary to make a pentagon.</p>
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-12"><span class="image fit"><img src="images/Laser_test_slope_Fusion.jpg"
+										alt="" /></span></div>
+						</div>
+					</div>
+					<p>That was not the most efficient way to do the test, it would have been easier to not bother with
+						the corners in Fusion and just make them in Inkscape, but I wanted to test the whole process.
+						In Fusion, I adjusted for the kerf of 0.133 mm and exported as a .dxf file. I opened the file in
+						Inkscape. I immediately saw problems. The top line of the rectangle was split in two parts
+						and on top of that, the corners were rounded so getting the lines to fit was not an easy drag
+						and drop:
+					</p>
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-12"><span class="image fit"><img src="images/Laser_test_slope_corner.jpg"
+										alt="" /></span></div>
+						</div>
+					</div>
+					<p>But after some in app measurements and easy calculation, I ended with 4 lines and 4 corners, just
+						like I wanted. Then I created rectangles in which the gradient fill was supposed to go.
+						I only found one way to get an accurate gradient, and that was to use the snaping-mechanism of
+						the corners of the rectangle to get a horizontal line. Then I realized, I should have duplicated
+						the rectangle to the other side before adding the gradient. After fixing that I had a successful
+						test unit, or I thought so.
+					</p>
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-12"><span class="image fit"><img
+										src="images/Laser_test_slope_sheet_with_gradient.jpg" alt="" /></span></div>
+						</div>
+					</div>
+					<p>I made a copy of the test unit and changed the opacity down to 50%. Then I duplicated the items
+						to get a set for testing. After that I realized that I should have made it in black, not red.
+						I slammed the undo button, fixed the color and did it all over again. The end result looked like
+						this:
+					</p>
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-12"><span class="image fit"><img src="images/Laser_test_slope_all.jpg"
+										alt="" /></span></div>
+						</div>
+					</div>
+					<p>Worktime: 1.15 hours.</p>
+					<h3>Testing the slope</h3>
+					<p>At the FabLab in VR3, I copy-pasted the .svg file (shown in figure above) to the PC connected to
+						the laser cutter. I opened it in Inkscape and printed it out to Epilog Dashboard (the laser
+						cutter driver). When doing so, I realized that the driver was not splitting the file correctly
+						between engraving and vector. To fix that, I went back to Inkscape, deleted all the edges,
+						selected the gradients and exported as .png with the pixel density of 1000 dpi. Then I opened a
+						new file in Inkscape, drag-and-dropped the png image and drew rectangles around the gradients,
+						just like before.
+					</p>
+					<p>The first test was clearly not a success. The graving was clearly not deep enough and no slope
+						visible.</p>
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-4"><span class="image fit"><img src="images/Epilog_slope_test1_setup1.jpg"
+										alt="" /></span></div>
+							<div class="col-4"><span class="image fit"><img src="images/Epilog_slope_test1_setup2.jpg"
+										alt="" /></span></div>
+							<div class="col-4"><span class="image fit"><img src="images/Slope_test1_results1.jpg"
+										alt="" /></span></div>
+						</div>
+					</div>
+					<p>In an effort to make the slope at least noticible, I increased the resolution from 300 to 600,
+						lowered the speed from 30% to 10% and kept the power at 100%.
+						Then I made the lasercutter cut again. Test 2 was much better, I clearly had some slopes, but
+						they were neither steep enough nor with good enough finish.
+					</p>
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-4"><span class="image fit"><img src="images/Epilog_slope_test2_setup1.jpg"
+										alt="" /></span></div>
+							<div class="col-4"><span class="image fit"><img src="images/Epilog_slope_test2_setup2.jpg"
+										alt="" /></span></div>
+							<div class="col-4"><span class="image fit"><img src="images/Slope_test1_results2.jpg"
+										alt="" /></span></div>
+						</div>
+					</div>
+					<p>Test 3 was the final slope test and a huge succsess. It proved that creating a corner with
+						engraving is truly possible. The only change from test 2 to 3 was
+						the speed. In test 3, the speed was only 5%.
+					</p>
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-6"><span class="image fit"><img src="images/SlopeTest3_1.jpg"
+										alt="" /></span></div>
+							<div class="col-6"><span class="image fit"><img src="images/SlopeTest3_2.jpg"
+										alt="" /></span></div>
+						</div>
+					</div>
+					<p>Worktime: 4 hours.</p>
+					<h3>Changing the base design</h3>
+					<p>At that point, I knew the slopes would work, but I had to tweak the design of the base a little
+						bit.
+						I drew a bowl holder and a fan holder. In both cases I drew some waypoints and used the spline
+						function.
+						And of course, I used parametric design as always. Additionally, I changed the opening at the
+						top to accomodate
+						for the intended Lego-gearbox, that was supposed to pass through. All those changes were much
+						easier due to using
+						parametric design.
+					</p>
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-12"><span class="image fit"><img src="images/Robot_base_design_color.jpg"
+										alt="" /></span></div>
+						</div>
+					</div>
+					<p>Worktime: 3 hours.</p>
+					<h3>Testing a corner and a logo</h3>
+					<p>I did not want to waste a whole sheet of plexiglass, not knowing how things fitted. Therefore I
+						tried cutting one corner from the base, and thank god I did that.
+						The test was not a succsess. The lasercutter did not cut all the intended cutting lines and left
+						some of them out.
+						The problem was that in order to get the epilog program to render a cutting line as such, the
+						line has to be on top of all .png files.
+						At the time, I did not know that and I spent a lot of time searching for the solution to the
+						problem. When I finally figured that out,
+						I tried cutting the corner from the same sheet at the same place. The laser went through but as
+						expected, the pressfit was not good.
+						I figured that was due to the laser cutting most of the lines twice. During that test, I also
+						tested cutting a logo.
+						I created the logo using <a href="brandmark.io">Brandmark.io</a>. But I did not pay for use of
+						the logo, but due to this only beeing
+						a school project with absolutely no intend to continue with, I figured using the logo this time
+						would be ok. Brandmark ownes all rights to the logo.
+						I have purchased logos from them in the past and I really recommend their service.
+					</p>
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-12"><span class="image fit"><img src="images/Robot_logo.jpg"
+										alt="" /></span></div>
+							<div class="col-12"><span class="image fit"><img src="images/ClearPlexiLogoEngraving.jpg"
+										alt="" /></span></div>
+						</div>
+					</div>
+					
+			</section>
+		</article>
+	</div>
 
-							</div>
-						
-					</article>
+	<!-- Footer -->
+	<footer id="footer">
+		<ul class="icons">
+			<li><a href="https://www.linkedin.com/in/saemundurgudmundsson" class="icon brands fa-linkedin-in"><span
+						class="label">LinkedIn</span></a></li>
+			<li><a href="https://hi.is" class="fas fa-university" style="border-bottom: none;"><span
+						class="label"></span></a></li>
+			<li><a href="https://github.com/saemi10/TolvustuddFramleidsla" class="fab fa-github"
+					style="border-bottom: none;"><span class="label"></span></a></li>
+			<li><a href="mailto:sag72@hi.is" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+		</ul>
+		<ul class="copyright">
+			<li>&copy; Sæmundur Guðmundsson. All rights reserved</li>
+			<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+		</ul>
+	</footer>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/saemundurgudmundsson" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://hi.is" class="fas fa-university" style="border-bottom: none;"><span class="label"></span></a></li>
-							<li><a href="https://github.com/saemi10/TolvustuddFramleidsla" class="fab fa-github" style="border-bottom: none;"><span class="label"></span></a></li>
-							<li><a href="mailto:sag72@hi.is" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-						<ul class="copyright">
-							<li>&copy; Sæmundur Guðmundsson. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
+	</div>
 
-			</div>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+</body>
 
-	</body>
 </html>

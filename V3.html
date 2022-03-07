@@ -54,7 +54,7 @@
 
 					<h2>Intro</h2>
 					<p>Project 3 was made up of two parts: <br /> <b>Part 1:</b><br /> 3D scanning an object of my choice using any program/app available.<br /> <b>Part 2:</b><br />
-						Designing and 3D printing an object that can not be made using a 3-axis CNC machine.
+						Designing and 3D printing an object that can not be made using a 3-axis CNC machine using parametric design.
 						Used material was not to exceed 100g of plastic. 
 						Desicisions such as amount and placement of support material, material choice and overall design, had to be made based on tests and research.
 						Available materials were e.g. PLA, ABS and PETG.
@@ -220,17 +220,144 @@
 							</div>
 						</div>
 					</div>
-
-
-					<!--<p>Vestibulum ultrices risus velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam. Proin nec dui cursus, posuere dui eget interdum. Fusce lectus magna, sagittis at facilisis vitae, pellentesque at etiam. Quisque posuere leo quis sem commodo, vel scelerisque nisi scelerisque. Suspendisse id quam vel tortor tincidunt suscipit. Nullam auctor orci eu dolor consectetur, interdum ullamcorper ante tincidunt. Mauris felis nec felis elementum varius.</p>
-
-								<hr />
-
-								<h4>Feugiat aliquam</h4>
-								<p>Nam sapien ante, varius in pulvinar vitae, rhoncus id massa. Donec varius ex in mauris ornare, eget euismod urna egestas. Etiam lacinia tempor ipsum, sodales porttitor justo. Aliquam dolor quam, semper in tortor eu, volutpat efficitur quam. Fusce nec fermentum nisl. Aenean erat diam, tempus aliquet erat.</p>
-
-								<p>Etiam iaculis nulla ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit, eget condimentum nunc blandit vel. In at pulvinar lectus. Morbi diam ante, vulputate et imperdiet eget, fermentum non dolor. Ut eleifend sagittis tincidunt. Sed viverra commodo mi, ac rhoncus justo. Duis neque ligula, elementum ut enim vel, posuere finibus justo. Vivamus facilisis maximus nibh quis pulvinar. Quisque hendrerit in ipsum id tellus facilisis fermentum. Proin mauris dui, at vestibulum sit amet, auctor bibendum neque.</p>-->
-
+					<p>Printing the test was a group project, done with Friðrik Valur and Finnur Mauritz. 
+						More information can be found at <a href="https://frikki2801.github.io/TolvustuddFramleidsla/Verkefni3.html#3DTest">Friðrik's website</a>.
+					</p>
+					<p>Worktime: 4.4 hours.</p>
+					<h3>Designing inserts</h3>
+					<p>I descided to split my 3D printing project into two parts for the soup robot: An insert for the arm and a duct on a pillar for a fan. 
+						I started by designing an insert around a T-shaped Lego brick, that would pressfit to the arm of the robot. 
+						All dimensions were added into the parameter table, which made tweaking the design later on a lot easier.
+						After careful measurements and some calculations I had a design. I showed Friðrik the design, and he had doubts about securing the brick.
+						Therefore I canged the design to a closed one with the intesion to pause the print and insert the brick. 
+						The design did not make it all the way to the printer though.
+					</p>
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-6"><span class="image fit"><img src="images/3D_prent_insertT1_fusion.jpg" alt="" /></span>
+							</div>
+							<div class="col-6"><span class="image fit"><img src="images/3D_prent_insertT2_fusion.jpg" alt="" /></span>
+							</div>
+						</div>
+					</div>
+					<p>In the design process for the soup robot, we descided to change to a slightly bent lego brick, instead of the T-shaped one. 
+						To create a nice pressfit and to place the holes for bolts in the right places, I downloaded a <a href="https://www.thingiverse.com/thing:3465066/files">CAD file</a>
+						of the lego brick as a mesh and drew around it. I of course measured an actual brick and compared it to the drawing using the Inspect tool in Fusion.
+						I used this <a href="https://www.colorhexa.com/ff7b15">website</a> to find the excact color of Prusa-orange filament to change the apearance in Fusion 360.
+					</p>
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-12"><span class="image fit"><img src="images/3D_prent_insert_fusion.jpg" alt="" /></span>
+							</div>
+						</div>
+					</div>
+					I exported the file as .stl and sliced it in Pruse slicer. At the time, I forgot to think about support material, but that was a mistake I learned from.
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-12"><span class="image fit"><img src="images/3D_prent_insert_slicer.jpg" alt="" /></span>
+							</div>
+						</div>
+					</div>
+					<p>Worktime: 8 hours.</p>
+					<h3>Printing the insert</h3>
+					<p>When I got to the FabLab, I downloaded the .gcode file from the slicer to a SD card and inserted it to the printer, made shure the printer settings were adjusted for PLA and started printing.
+						The print had not gotten very far when I realized, I had forgot to add support material. Therefore, I stopped the print and went back to the slicer to add support.
+						I used the smart fill tool in the slicer and selected the only surface I thought needed support material. 
+						I was certain that the printer could bridge 35 mm based on it bridging exceptionally well for 25 mm which was the maximum bridging tested in the printer test.
+						That also turned out to be a mistake, but not a serious one and it was fixed with a file in the end. 
+						Due to asthetics for the robot, I switched printers between the supportless fail and the actual print, resulting in the insert beeing black instead of orange.
+						To accomodate for that, I had to slice the part again for the other printer. That was no problem and not time consuming.
+					</p>
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-4"><span class="image fit"><img src="images/Insert3DPrintingWithoutSupport1.jpg" alt="" /></span>
+							</div>
+							<div class="col-4"><span class="image fit"><img src="images/Insert3DPrintingWithoutSupport2.jpg" alt="" /></span>
+							</div>
+							<div class="col-4"><span class="image fit"><img src="images/Insert3DPrintingWithoutSupport3.jpg" alt="" /></span>
+							</div>
+							<div class="col-4"><span class="image fit"><img src="images/3D_printing_support.jpg" alt="" /></span>
+							</div>
+							<div class="col-4"><span class="image fit"><img src="images/3D_printing_support(1).jpg" alt="" /></span>
+							</div>
+							<div class="col-4"><span class="image fit"><img src="images/3D_printing_support(2).jpg" alt="" /></span>
+							</div>
+						</div>
+					</div>
+					<p>The printer printed the insert without any problems:</p>
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-4"><span class="image fit"><img src="images/Insert3Dprinting6.jpg" alt="" /></span>
+							</div>
+							<div class="col-4"><span class="image fit"><img src="images/Insert3Dprinting5.jpg" alt="" /></span>
+							</div>
+							<div class="col-4"><span class="image fit"><img src="images/Insert3Dprinting1.jpg" alt="" /></span>
+							</div>
+							<div class="col-4"><span class="image fit"><img src="images/Insert3Dprinting2.jpg" alt="" /></span>
+							</div>
+							<div class="col-4"><span class="image fit"><img src="images/Insert3Dprinting3.jpg" alt="" /></span>
+							</div>
+							<div class="col-4"><span class="image fit"><img src="images/Insert3Dprinting4.jpg" alt="" /></span>
+							</div>
+						</div>
+					</div>
+					<p>Next, I removed the support material using a tablecloth knife and pliers:</p>
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-3"><span class="image fit"><img src="images/InsertSupportRemoval1.jpg" alt="" /></span>
+							</div>
+							<div class="col-3"><span class="image fit"><img src="images/InsertSupportRemoval2.jpg" alt="" /></span>
+							</div>
+							<div class="col-3"><span class="image fit"><img src="images/InsertSupportRemoval3.jpg" alt="" /></span>
+							</div>
+							<div class="col-3"><span class="image fit"><img src="images/InsertSupportRemoval4.jpg" alt="" /></span>
+							</div>
+						</div>
+					</div>
+					<p>When the support material had been removed, I checked the pressfit of the insert. It fitted nicely with the intended 3 mm plexiglass.
+						In the robot itself we actually used a black 3.15 mm material and therefore we had to file both the insert and the plexiglass. 
+						The insert did thought fit the Lego brick perfectly.
+					</p>
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-6"><span class="image fit"><img src="images/InsertPressfitClearPlexi.jpg" alt="" /></span>
+							</div>
+							<div class="col-6"><span class="image fit"><img src="images/InsertPerfectFit.jpg" alt="" /></span>
+							</div>
+						</div>
+					</div>
+					<p>At last, I inspected the print quality. The results were: the printer should not bridge more than 30mm without support material. 
+						The inspection was done using eyes, cameras and macro camera for electrical use.
+					</p>
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-3"><span class="image fit"><img src="images/InsertPrintQuality.jpg" alt="" /></span>
+							</div>
+							<div class="col-3"><span class="image fit"><img src="images/PrintQualityInspection.jpg" alt="" /></span>
+							</div>
+							<div class="col-3"><span class="image fit"><img src="images/PrintQualityInspection2.jpg" alt="" /></span>
+							</div>
+							<div class="col-3"><span class="image fit"><img src="images/PrintQualityInspection3.jpg" alt="" /></span>
+							</div>
+						</div>
+					</div>
+					<p>Worktime: 5.5 hours.</p>
+					<h3>Designing a fan duct</h3>
+					<p>I wanted to print something, that could not be made with any other method, and still be useful for the soup robot. 
+						Then I got the idea of printing a duct around a small fan, used to cool the soup. 
+						The duct would be a one piece, printed around the fan, making it impossible to manufacture using any other method.
+						I started by searching on the web using the keywords: "small fan duct" but I did not find anything interesting.
+						Me and my creativity were on our own for this part.
+						I started by measuring the fan and added the measurements to the parameter table in Fusion.
+					</p>
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-6"><span class="image fit"><img src="images/Fan.jpg" alt="" /></span>
+							</div>
+							<div class="col-6"><span class="image fit"><img src="images/FanMeasurements.jpg" alt="" /></span>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 		</article>
